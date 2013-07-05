@@ -6,13 +6,13 @@ module.exports = (BasePlugin) ->
     name: 'navlinks'
 
     config:
-      collections: []
+      collections: {}
 
     renderBefore: (opts, next) ->
       {collection, templateData} = opts
       config = @config
 
-      config.collections.forEach (collectionName) ->
+      for collectionName, sorting of config.collections
         collection = @docpad.getCollection(collectionName)
         if collection?
           docpad.log 'info', 'Adding navlinks for collection: ', collectionName
@@ -20,11 +20,11 @@ module.exports = (BasePlugin) ->
           collection.forEach (document) ->
             navlinks = navlinks:
                         title:
-                          next: collection.at(index + 1)?.get('title')
-                          prev: collection.at(index - 1)?.get('title')
+                          next: collection.at(index + sorting)?.get('title')
+                          prev: collection.at(index - sorting)?.get('title')
                         url:
-                          next: collection.at(index + 1)?.get('url')
-                          prev: collection.at(index - 1)?.get('url')
+                          next: collection.at(index + sorting)?.get('url')
+                          prev: collection.at(index - sorting)?.get('url')
 
             document.set(navlinks)
             index++

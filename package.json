@@ -1,6 +1,6 @@
 {
     "name": "docpad-plugin-navlinks",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Docpad plugin which adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection",
     "homepage": "https://github.com/lucor/docpad-plugin-navlinks",
     "keywords": [
@@ -27,7 +27,7 @@
         "docpad": ">=6"
     },
     "devDependencies": {
-        "coffee-script": "~1.4.0"
+        "coffee-script": ">=1.6"
     },
     "main": "./out/navlinks.plugin.js",
     "readmeFilename": "readme.md",

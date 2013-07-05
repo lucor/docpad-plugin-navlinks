@@ -24,13 +24,15 @@ Identify one o more collections you want add navbar links in the
       database.findAllLive({layout:$has:'post'}, [date:-1])
 ```
 
-Define collections you want to enable navbar links
+Define collections you want to enable navbar links. You may also specifies collection sorting (-1 for reverse order).
 
 ``` coffee
   # Plugins configurations
   plugins:
     navlinks:
-      collections: ['posts']
+      collections:
+        posts: -1
+        pages: 1
 ```
 
 In the eco template (i.e. post.html.eco) add:
@@ -53,5 +55,6 @@ You may style the navlinks usign the following css classes:
 ```
 
 ## License
-See license.md file
+Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
+<br/>Copyright &copy; 2013+ [Luca Corbo](http://lucor.github.io)
 
