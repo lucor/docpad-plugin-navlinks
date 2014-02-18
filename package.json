@@ -1,35 +1,39 @@
 {
-    "name": "docpad-plugin-navlinks",
-    "version": "2.0.2",
-    "description": "Docpad plugin which adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection",
-    "homepage": "https://github.com/lucor/docpad-plugin-navlinks",
-    "keywords": [
-        "docpad",
-        "docpad-plugin",
-        "navlinks"
-    ],
-    "author": "Luca Corbo <lu.corbo@gmail.com> (http://lucor.github.io)",
-    "maintainers": [
-        "Luca Corbo <lu.corbo@gmail.com> (http://lucor.github.io)"
-    ],
-    "contributors": [
-        "Luca Corbo <lu.corbo@gmail.com> (http://lucor.github.io)"
-    ],
-    "bugs": {
-        "url": "https://github.com/lucor/docpad-plugin-navlinks/issues"
-    },
-    "repository" : {
-        "type": "git",
-        "url": "https://github.com/lucor/docpad-plugin-navlinks.git"
-    },
-    "engines" : {
-        "node": ">=0.8",
-        "docpad": ">=6"
-    },
-    "devDependencies": {
-        "coffee-script": ">=1.6"
-    },
-    "main": "./out/navlinks.plugin.js",
-    "readmeFilename": "readme.md",
-    "license": "MIT"
+  "title": "NavLinks Plugin for DocPad",
+  "name": "docpad-plugin-navlinks",
+  "version": "2.0.2",
+  "description": "Docpad plugin which adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection",
+  "homepage": "https://github.com/lucor/docpad-plugin-navlinks",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "navlinks"
+  ],
+  "author": "Luca Corbo <lu.corbo@gmail.com> (http://lucor.github.io)",
+  "maintainers": [
+    "Luca Corbo <lu.corbo@gmail.com> (http://lucor.github.io)"
+  ],
+  "contributors": [
+    "lucor (https://github.com/lucor)"
+  ],
+  "bugs": {
+    "url": "https://github.com/lucor/docpad-plugin-navlinks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucor/docpad-plugin-navlinks.git"
+  },
+  "engines": {
+    "node": ">=0.8",
+    "docpad": ">=6"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "projectz": "~0.3.10"
+  },
+  "main": "./out/navlinks.plugin.js",
+  "readmeFilename": "readme.md",
+  "license": {
+    "type": "MIT"
+  }
 }
