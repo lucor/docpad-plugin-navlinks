@@ -15,7 +15,7 @@ module.exports = (BasePlugin) ->
       for collectionName, sorting of config.collections
         collection = @docpad.getCollection(collectionName)
         if collection?
-          docpad.log 'info', 'Adding navlinks for collection: ', collectionName
+          @docpad.log 'info', 'Adding navlinks for collection: ', collectionName
           index = 0
           collection.forEach (document) ->
             navlinks = navlinks:
