@@ -1,7 +1,10 @@
 ## History
 
-- v2.x
+- v2.0.3 May 22, 2014
+  - ReferenceError: docpad not defined
+    - Thanks to [Petrik van der Velde](https://github.com/pvandervelde)
   - Updated dependencies
+    - Thanks to [Rob Loach](https://github.com/RobLoach)
 
 - v2.0.2 August 09, 2013
   - Minor bug fixing
