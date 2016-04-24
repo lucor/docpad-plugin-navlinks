@@ -46,11 +46,11 @@ module.exports = (BasePlugin) ->
           prevLink = nextLink = ''
           if navLinks.url.prev?
             prevLink = """
-                       <a href="#{navLinks.url.prev}" title="Previous Post: #{navLinks.title.prev}" class="navlinks-prev">&laquo; #{navLinks.title.prev}</a>
+                       <a href="#{navLinks.url.prev}" title="#{navLinks.title.prev}" class="navlinks-prev">#{navLinks.title.prev}</a>
                        """
           if navLinks.url.next?
             nextLink = """
-                       <a href="#{navLinks.url.next}" title="Next Post: #{navLinks.title.next}" class="navlinks-next">#{navLinks.title.next} &raquo;</a>
+                       <a href="#{navLinks.url.next}" title="#{navLinks.title.next}" class="navlinks-next">#{navLinks.title.next}</a>
                        """
           return """
                    <div class="#{styles}">
